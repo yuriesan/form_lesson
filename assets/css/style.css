@@ -75,7 +75,7 @@
 
 .inner {
   width: 640px;
-  background-color: #ffffff;
+  background-color: #fff;
   margin: 0 auto;
   
 }
@@ -256,6 +256,10 @@ select {
   font-size: 16px;
 }
 
+.course-option:last-child {
+  margin-bottom: 0;
+}
+
 .course-option input {
   display: none;
 }
@@ -330,6 +334,10 @@ select {
   color: #01a6a4;
 }
 
+.line-color:hover {
+  color: #01bfbd;
+}
+
 /* inner の外 */
 
 .footer-part {
@@ -340,4 +348,10 @@ select {
   margin-bottom: 8px;
   line-height: 16px;
   font-size: 12px;
+}
+
+.footer-part a:hover {
+  box-sizing: border-box;
+  border-bottom: 1px solid #ececec;
+  border-bottom-color: #01bfbd;
 }
