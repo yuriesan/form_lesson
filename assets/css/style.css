@@ -1,1 +1,343 @@
 @charset "utf-8";
+
+
+/* 共通のスタイル */
+
+.full-width {
+  width: 100%;
+}
+
+.half-width {
+  width: 50%;
+}
+
+.text-font {
+  color: #949697;
+  font-size: 12px;
+}
+
+.row {
+  margin-bottom: 20px;
+}
+
+.label-text {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #545658;
+}
+
+.input-text {
+  box-sizing: border-box;
+  height: 36px;
+  width: 100%;
+  padding: 5px;
+  color: #545658;
+  font-size: 13px;
+  line-height: 2;
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+}
+
+.input-text:focus {
+  background-color: #fff;
+  border-color: rgba(59, 133, 133, .4);
+  box-shadow: 0 0 0 2px rgba(1, 191, 189, .1);
+  outline: 0;
+}
+
+.alert {
+  color: #dd4b39;
+  display: inline-block;
+  margin-left: 3px;
+}
+
+.button {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  transition: .3s;
+  padding: 13px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/* --------------------------- */
+
+.wrapper {
+  padding: 32px 0;
+  width: 100%;
+  background-color: #f2f6f7;
+}
+
+.inner {
+  width: 640px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  
+}
+
+.main-content {
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, .18);
+  padding: 48px 64px;
+  margin-bottom: 32px;
+}
+
+.title {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #545658;
+  font-size: 24px;
+}
+
+/* snsボタン */
+
+.sns {
+  display: flex;
+  margin-bottom: 8px;
+}
+
+.sns-link:last-child {
+  margin-left: 8px;
+}
+
+.facebook {
+  color: #fff;
+  background-color: #3b5999;
+  border: 1px solid #344e87;
+}
+
+.facebook:hover{
+  background-color: #344e87;
+  
+}
+
+.google {
+  color: #dd4b39;
+  background-color: #fff;
+  border: 1px solid #d9d9d9;
+}
+
+.google:hover {
+  background-color: #f7f7f7;
+}
+
+.sns-text {
+  text-align: center;
+}
+
+/* アカウント情報 */
+
+.account {
+  position: relative;
+  text-align: center;
+  margin: 20px 0;
+}
+
+.account::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 1px;
+  width: 100%;
+  background-color: #ececec;
+}
+
+.account-info {
+  display: inline-block;
+  position: relative;
+  padding: 0 10px;
+  background-color: #fff;
+}
+
+/* form 名前 */
+
+  .name-box {
+    display: flex;
+  }
+
+  .name {
+    margin-left: 16px;
+  }
+
+  .name:first-child {
+    margin-left: 0;
+  }
+
+/* form 性別 */
+
+.gender-contents {
+  display: flex;
+  color: #545658;
+  font-size: 16px;
+}
+
+.gender-content {
+  margin-left: 15px;
+  cursor: pointer
+}
+
+.gender-content input {
+  display: none;
+}
+
+.gender-content:first-child {
+  margin-left: 0;
+}
+
+.gender-content span {
+  position: relative;
+  display: inline-block;
+  padding: 3px 3px 3px 20px;
+}
+
+.gender-content span::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 14px;
+  width: 14px;
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+}
+
+.gender-input:checked + span::after {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  height: 8px;
+  width: 8px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  background-color: #01bfbd;
+}
+
+/* form 出身 */
+
+.select-area {
+  position: relative;
+}
+
+.select-area::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 45%;
+  transform: rotate(45deg);
+  height: 5px;
+  width: 5px;
+  border-right: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+select {
+  -webkit-appearance: none;
+	-moz-appearance: none;
+  appearance: none;
+}
+
+/* form 希望コース */
+
+.course-option {
+  margin-bottom: 10px;
+  color: #545658;
+  font-size: 16px;
+}
+
+.course-option input {
+  display: none;
+}
+
+.course-option-text {
+  position: relative;
+  padding-left: 25px;
+}
+
+.course-option-text::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 15px;
+  width: 15px;
+  margin-top: -8px;
+  border: 1px solid #d9d9d9;
+}
+
+.course-option input:checked + .course-option-text::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: rotate(45deg);
+  height: 16px;
+  width: 8px;
+  margin-top: -12px;
+  border-right: 3px solid #01bfbd;
+  border-bottom: 3px solid #01bfbd;
+}
+
+/* form 備考 */
+
+.remarks .input-text {
+  height: 100px;
+}
+
+.remarks textarea {
+  resize: none;
+}
+
+/* button アカウント作成 */
+
+.submit-btn {
+  background-color: #01bfbd;
+  border-color: #01bfbd;
+  color: #fff;
+}
+
+.submit-btn:hover {
+  background-color: #01a6a4;
+  border-color: #01a6a4;
+}
+
+.submit-btn:active {
+  background-color: #fff;
+  color: #01a6a4;
+  border: 1px solid #d9d9d9;
+  outline: 0;
+}
+
+/* announce */
+
+.announce {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.line-color {
+  color: #01a6a4;
+}
+
+/* inner の外 */
+
+.footer-part {
+  text-align: center;
+}
+
+.footer-part p,.resend-mail {
+  margin-bottom: 8px;
+  line-height: 16px;
+  font-size: 12px;
+}
